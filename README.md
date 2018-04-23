@@ -1,5 +1,5 @@
 # SF Housing Pipeline Visualization
-  >This project explores San Francisco housing issue and trying to figure out how the affordable housing help people to stay in the city.
+This project explores San Francisco housing issue and trying to figure out how the affordable housing help people to stay in the city.
 ## Project Description
 This project explores San Francisco housing issue and trying to figure out how the affordable housing help people to stay in the city.
 
