@@ -1,0 +1,81 @@
+body {
+  background-color: white;
+  text-align: center;
+
+  font-family: sans-serif;
+  font-size: 9pt;
+}
+
+#tooltip {
+  font-weight: 600;
+  text-shadow: 0px 0px 2px white;
+  fill: black;
+  stroke: none;
+}
+
+.header {
+    font-weight: bold;
+    text-anchor: end;
+    font-size: 15;
+}
+
+.hideall {
+    font-weight: bold;
+    text-anchor: end;
+    font-size: 15;
+}
+
+.source {
+    font-size: 13;
+    text-anchor: end;
+}
+
+.buttondisplay {
+        font-size: 13;
+        text-anchor: end;
+}
+
+.active {
+    fill: yellow !important;
+    fill-opacity: 0.8;
+}
+
+.hideall {
+    cursor: pointer;
+}
+
+
+path.land {
+    fill: #dddddd;*/
+  stroke: none;
+    cursor: pointer;
+}
+
+path.neighborhood {
+  fill: none;
+  stroke: white;
+  stroke-width: 3.5px;
+  pointer-events: none;
+}
+
+path.district {
+  fill: none;
+  stroke: white;
+  stroke-width: 1px;
+  pointer-events: none;
+}
+
+circle.symbol {
+  fill-opacity: 0.6;
+
+  stroke: white;
+  stroke-width: 1px;
+}
+
+.piechartlabel {
+    font-weight: bold;
+}
+.label {
+    font-weight: bold;
+}
+

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data Visualization Project</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Housing in San Francisco</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="map.html">Housing Destribution</a>
+                    </li>
+                    <li>
+                        <a href="barchart.html">Main Affordable Housing Sponsors</a>
+                    </li>
+                    <li>
+                        <a href="barcharts.html">Sponsor's Performance Assesment</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/san-francisco.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1 style="color:white">San Francisco Affordable Housing Pipeline</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <article>
+        <div class="container">
+            <div class="row">
+<!--                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">-->
+                    <h2 class="section-heading">Project Description</h2>
+                    <p>This project explores San Francisco housing issue and trying to figure out how the affordable housing help people to stay in the city.</p>
+                    <h2 class="section-heading">The Dataset Description</h2>
+
+                <p>The dataset I used for this project is called "Affordable_Housing_Pipeline" from <a href="https://data.sfgov.org/Housing-and-Buildings/Affordable-Housing-Pipeline/aaxw-2cb8"><i>SFOpenData</i></a>. The original data was provided by <i>Mayor's Office of Housing and Community Development</i>.According to the <i>Public Domain Dedication and License</i>, I am allowed to “freely share, modify, and use this work for any purpose and without any restrictions.” SFOpenData describes this dataset as a "snapshot of the Mayor’s Office of Housing and Community Development (MOHCD) and the Office of Community Investment and Infrastructure (OCII) affordable housing pipeline projects. The projects listed are in the process of development--or are anticipated to be developed--in partnership with non-profit or for-profit developers and financed through city funding agreements, ground leases, disposition and participation agreements and conduit bond financing. The Affordable Housing Pipeline also includes housing units produced by private developers through the Inclusionary Affordable Housing Program".</p>
+
+                    <h2 class="section-heading">Motivation</h2>
+
+                <p>When I was finishing my freshmen year at <a href="usfca.edu"><i>USF</i></a>, I had to look for an off-campus housing.
+                        At the time, I wasn’t aware of how expensive and competitive the housing market in San
+                        Francisco is, so I started very late and didn’t get the best deal. This experience motivated me to
+                        look deeper into the housing crisis in San Francisco and try understanding what’s causing it, and
+                        one of the main issues I’ve discovered was the lack of affordable housing. The “Affordable
+                        Housing Pipeline” data allowed me to further analyze, whether the
+                        affordable housing plan provided enough housing to eliminate the shortage and fix the housing
+                        crisis in San Francisco.</p>
+                    <p>The thing I wanted to learn from this project is if the housing situation will be improved in 2019 (the plan ends in 2018). 
+                        I wanted to see how many planned projects will be completed (some of them don’t have the completion date at all, so they don’t count) by December 31, 2018; more specifically, how many
+                        new affordable units will be on the housing market at the beginning of
+                        2019. I’m also interested in how the government is distributing the housing across all of the
+                        city’s areas; what neighborhoods in San Francisco are anticipated to get the most affordable
+                        housing. I'm also excited to know what companies support the affordable housing development, and who contributes the most out of them. Overall, my general goal is to understand whether this plan (assuming all of the projects are
+                        successful) can successfully eliminate the lack of affordable housing in the city.</p>
+                    
+                    <h2 class="section-heading">Data Processing</h2>
+                    <p>This project involved a lot of data processing, since not all the data was directly stored in an aforementioned dataset. I mostly used d3 tools (e.g "d3.nest") to process the data; however, sometimes I had to manually put the values in a separate csv, since it was the most optimal solution for the data provided. The detailed description of the data processing is attached to every individual visualization.</p>
+                    
+                    <h2 class="section-heading">Findings</h2>
+                    <p>Unfortunately, I couldn't find the way to answer the main question, whether the housing problem will be solved by 2018, since the dataset doesn't contain enough data to sucessfully answer it. However, the city is making a progress and trying its best to solve it. However, I discovered that the housing destribution among the districts is fair, and what district gets the most housing. The more detailed results are available under every indvidual visualization</p>
+<!--
+                    <a href="#">
+                        <img class="img-responsive" src="img/post-sample-image.jpg" alt="">
+</a>
+--> 
+                <h2 class="section-heading">Visualizations (click to explore)</h2>
+                <hr>
+<!--                </div>-->
+<div class="col-md-4">
+    <a href="map.html">
+    <img class="img-responsive" src="img/map.png" />
+    </a>
+ </div>
+ <div class="col-md-4">
+    <a href="barcharts.html">
+   <img class="img-responsive" src="img/barcharts.png" />
+     </a>
+ </div>
+ <div class="col-md-4">
+     <a href="barchart.html">
+   <img class="img-responsive" src="img/barchart.png" />
+     </a>
+ </div>
+    </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Main Content -->
+<!--
+    <div class="container">
+        <div class="row">
+            <h1>Project Description</h1>
+-->
+<!--
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Man must explore, and this is exploration at its greatest
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Problems look mighty small from 150 miles up
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+                        </h2>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Science has not yet mastered prophecy
+                        </h2>
+                        <h3 class="post-subtitle">
+                            We predict too much for the next year and yet far too little for the next ten.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Failure is not an option
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
+                </div>
+                <hr>
+                 Pager 
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#">Older Posts &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+-->
+<!--
+        </div>
+    </div>
+-->
+
+<!--    <hr>-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="mailto:anovitskiy@dons.usfca.edu?Subject=Map%20Visualization">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/goomble/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Goomble">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Arseniy Novitskiy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
