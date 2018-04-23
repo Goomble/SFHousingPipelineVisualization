@@ -3,7 +3,7 @@ This project explores San Francisco housing issue and trying to figure out how t
 Project Description
 This project explores San Francisco housing issue and trying to figure out how the affordable housing help people to stay in the city.
 
-The Dataset Description
+<b>The Dataset Description</b>
 The dataset I used for this project is called "Affordable_Housing_Pipeline" from SFOpenData. The original data was provided by Mayor's Office of Housing and Community Development.According to the Public Domain Dedication and License, I am allowed to “freely share, modify, and use this work for any purpose and without any restrictions.” SFOpenData describes this dataset as a "snapshot of the Mayor’s Office of Housing and Community Development (MOHCD) and the Office of Community Investment and Infrastructure (OCII) affordable housing pipeline projects. The projects listed are in the process of development--or are anticipated to be developed--in partnership with non-profit or for-profit developers and financed through city funding agreements, ground leases, disposition and participation agreements and conduit bond financing. The Affordable Housing Pipeline also includes housing units produced by private developers through the Inclusionary Affordable Housing Program".
 
 Motivation
